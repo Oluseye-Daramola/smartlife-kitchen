@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homepage</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="img/logo.svg"
+            alt="Logo"
+            width="200"
+            height="40"
+            class="d-inline-block align-text-top"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul
+            class="navbar-nav mx-auto mb-2 mb-lg-0 gap-4 p-2 pe-5 align-items-center"
+          >
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#features">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#community">My tasks</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#howitworks">News & Notes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+          <form class="d-flex pe-5" role="search">
+            <button class="btn btn-success btn-lg" type="submit">
+              <a href="index.html" class="text-white text-decoration-none"
+                >Search Recipe</a
+              >
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Session -->
+    <section
+      class="hero-section d-flex align-items-center text-white"
+      style="
+        background: url('img/carousel 1.jpg') no-repeat center center;
+        background-size: cover;
+        height: 80vh;
+      "
+    >
+      <div class="container text-center text-md-start">
+        <div class="row">
+          <div class="col-md-12 mt-3">
+            <h1 class="display-2 fw-bold mt-3">
+              Simplify your Cooking, Wellness and Time All in One App
+            </h1>
+            <p class="lead">
+              Get personalized recipes, plan tasks, and stay healthy.
+            </p>
+            <a href="index.html" class="btn btn-success btn-lg mt-3 px-5 py-2"
+              >Get Started</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main container for Fast Food News -->
+    <div class="container" id="features">
+      <h1 class="text-center pb-2 mb-3 fw-bold">Fast Food</h1>
+      <h5 class="text-center mt-2 mb-5">
+        Learn about new menu items, can't miss deals and promotions and must try
+        ordering hacks to get the most out of your drive-through run
+      </h5>
+
+      <div class="row">
+        <!-- Card 1 -->
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img src="img/jollof rice.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Nigerian Jollof Rice</h5>
+              <p class="card-text">A spicy, tasty rice dish</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img src="img/salad.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Healthy Salad Bowl</h5>
+              <p class="card-text">Fresh and Nutritious</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img src="img/Vegetable.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Healthy Vegetable Soup</h5>
+              <p class="card-text">Perfect for a light meal</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br />
+
+      <h1 class="text-center pb-2 mb-3 fw-bold">Grocery</h1>
+      <h5 class="text-center mt-2 mb-5">
+        Learn what’s new at the grocery store with all the latest and greatest
+        product releases deals, and expert shopping tips to stock your kitchen
+      </h5>
+
+      <div class="row">
+        <!-- Card 1 -->
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img src="img/jollof rice.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Nigerian Jollof Rice</h5>
+              <p class="card-text">A spicy, tasty rice dish</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img src="img/salad.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Healthy Salad Bowl</h5>
+              <p class="card-text">Fresh and Nutritious</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img src="img/Vegetable.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Healthy Vegetable Soup</h5>
+              <p class="card-text">Perfect for a light meal</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br />
+
+      <h1 class="text-center pb-2 mb-3 fw-bold">Celebrity and Entertainment</h1>
+      <h5 class="text-center mt-2 mb-5">
+        Stay on top all the latest celebrity food trends. plus find the best new
+        cooking tips and recipes from your favorite shows, movies and podcast.
+      </h5>
+
+      <div class="row">
+        <!-- Card 1 -->
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img src="img/jollof rice.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Nigerian Jollof Rice</h5>
+              <p class="card-text">A spicy, tasty rice dish</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img src="img/salad.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Healthy Salad Bowl</h5>
+              <p class="card-text">Fresh and Nutritious</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img src="img/Vegetable.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Healthy Vegetable Soup</h5>
+              <p class="card-text">Perfect for a light meal</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br />
+
+      <h1 class="text-center pb-2 mb-3 fw-bold">Trends</h1>
+      <h5 class="text-center mt-2 mb-5">
+        Get in to know the scoop on all the hottest food trends, whether it's on
+        tiktok or popping up in the restaurants across the country we have all
+        the latest recipe and techniques you need to know
+      </h5>
+
+      <div class="row">
+        <!-- Card 1 -->
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img src="img/jollof rice.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Nigerian Jollof Rice</h5>
+              <p class="card-text">A spicy, tasty rice dish</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img src="img/salad.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Healthy Salad Bowl</h5>
+              <p class="card-text">Fresh and Nutritious</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img src="img/Vegetable.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Healthy Vegetable Soup</h5>
+              <p class="card-text">Perfect for a light meal</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Community -->
+      <h1 class="text-center p-5 fw-bold" id="community">
+        Join hundreds of smart cooks already planning meals the easy way.
+      </h1>
+      <div class="text-center mb-5">
+        <button class="btn btn-success btn-lg px-5 py-3">
+          <a href="index.html" class="text-white text-decoration-none"
+            >Create a Free Account</a
+          >
+        </button>
+      </div>
+    </div>
+    <!-- footer -->
+    <footer class="bg-light pt-4 pb-3 p-5" id="contact">
+      <div class="row text-center py-2">
+        <!-- Column 1: Brand/About -->
+        <div class="col-md-3 mb-3">
+          <h6>Privacy Policy</h6>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="col-md-3 mb-3">
+          <h6>Terms of Service</h6>
+        </div>
+
+        <!-- Column 3: Quick Links -->
+        <div class="col-md-3 mb-3">
+          <h6>Contact Us</h6>
+        </div>
+
+        <!-- Column 4: Contact/Social -->
+        <div class="col-md-3 mb-3">
+          <h6>Follow Us On Social Media</h6>
+          <a href="#" class="text-dark me-2 text-decoration-none"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a href="#" class="text-dark me-2 text-decoration-none"
+            ><i class="fa-brands fa-x-twitter"></i
+          ></a>
+          <a href="#" class="text-dark text-decoration-none"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
+          <a href="#" class="text-dark text-decoration-none"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="#" class="text-dark text-decoration-none"
+            ><i class="fa-brands fa-pinterest"></i
+          ></a>
+        </div>
+      </div>
+
+      <hr class="border-light" />
+
+      <div class="text-center">
+        <small
+          >&copy; 2025 Smart Life Kitchen Assistant+ All rights reserved.</small
+        >
+      </div>
+    </footer>
+  </body>
+</html>
