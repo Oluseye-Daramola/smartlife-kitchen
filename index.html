@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Find meal for your Ingredients</title>
+    <title>Homepage</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -26,6 +26,7 @@
     ></script>
   </head>
   <body>
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
@@ -53,115 +54,308 @@
             class="navbar-nav mx-auto mb-2 mb-lg-0 gap-4 p-2 pe-5 align-items-center"
           >
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="home.html">Home</a>
+              <a class="nav-link active" aria-current="page" href="home.html"
+                >Home</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#">Features</a>
+              <a class="nav-link" href="#features">Features</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#contact">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">My tasks</a>
+              <a class="nav-link" href="#community">My tasks</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">News & Notes</a>
+              <a class="nav-link" href="news.html">News & Notes</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="home.html">Contact</a>
+              <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
           <form class="d-flex pe-5" role="search">
             <button class="btn btn-success btn-lg" type="submit">
-              Get Started
+              <a href="index.html" class="text-white text-decoration-none"
+                >Search Recipe</a
+              >
             </button>
           </form>
         </div>
       </div>
     </nav>
-    <div class="container">
-      <div class="meal-wrapper">
-        <div class="meal-search">
-          <h2 class="title">What would you like to cook today?</h2>
-          <!-- <blockquote>
-            Real food doesn't have ingredients, real food is ingredients. <br />
-            <cite>- Jamie Oliver</cite>
-          </blockquote> -->
-          <div class="meal-search-box">
-            <input
-              type="text"
-              class="search-control"
-              placeholder="Search recipes, cooks, tips..."
-              id="search-input"
-            />
-            <button
-              type="submit"
-              class="search-btn btn btn-success"
-              id="search-btn"
-            >
-              <i class="fas fa-search"></i>
-            </button>
-          </div>
-        </div>
 
-        <div class="meal-result">
-          <h2 class="title">Your results:</h2>
-          <div id="meal">
-            <!-- meal item -->
-            <!-- <div class="meal-item">
-              <div class="meal-img">
-                <img src="food.jpg" alt="food" />
-              </div>
-              <div class="meal-name">
-                <h3>Potato Chips</h3>
-                <a href="#" class="recipe-btn">Get Recipe</a>
-              </div>
-            </div> -->
-            <!-- end of meal item  -->
-          </div>
-        </div>
-        <div class="meal-details">
-          <!-- recipe close btn -->
-          <button
-            type="button"
-            class="btn recipe-close-btn"
-            id="recipe-close-btn"
-          >
-            <i class="fas fa-times"></i>
-          </button>
-          <!-- meal content -->
-          <div class="meal-details-content">
-            <!-- <h2 class="recipe-title">Meals Name Here</h2>
-            <p class="recipe-category">Category Name</p>
-            <div class="recipe-instruct">
-              <h3>Instructions:</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
-                illum ipsam tempora dolorem explicabo. Nobis harum quam, earum,
-                adipisci quia perferendis, aspernatur odio velit doloribus
-                blanditiis amet vitae quos dolore?
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Quibusdam, pariatur dolorem? Quibusdam laboriosam nulla
-                consequatur deleniti repellendus voluptatum aliquid ipsam
-                voluptatem itaque, id provident praesentium nisi rem voluptas
-                laudantium dolorem
-              </p>
-            </div>
-            <div class="recipe-meal-img">
-              <img src="food.jpg" alt="" />
-            </div>
-            <div class="recipe-link">
-              <a href="#" target="_blank">Watch Video</a>
-            </div> -->
+    <!-- Hero Session -->
+    <section
+      class="hero-section d-flex align-items-center text-white"
+      style="
+        background: url('img/carousel 1.jpg') no-repeat center center;
+        background-size: cover;
+        height: 80vh;
+      "
+    >
+      <div class="container text-center text-md-start">
+        <div class="row">
+          <div class="col-md-12 mt-3">
+            <h1 class="display-2 fw-bold mt-3">
+              Simplify your Cooking, Wellness and Time All in One App
+            </h1>
+            <p class="lead">
+              Get personalized recipes, plan tasks, and stay healthy.
+            </p>
+            <a href="index.html" class="btn btn-success btn-lg mt-3 px-5 py-2"
+              >Get Started</a
+            >
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
+    <!-- Main container -->
+    <div class="container" id="features">
+      <h1 class="text-center pb-2 mb-3 fw-bold">Core Features</h1>
+      <h4 class="text-center mt-2 mb-5">
+        Discover how we can help make cooking easier and healthier.
+      </h4>
+      <div class="text-center mb-5">
+        <button class="btn btn-success btn-lg px-5 py-3">
+          Explore Features
+        </button>
+      </div>
+
+      <!-- Core Features -->
+      <div class="row">
+        <div class="col-sm-6 mb-3 mb-sm-0">
+          <div
+            class="card h-100 shadow-sm hover-shadow transition"
+            style="cursor: pointer"
+            onmouseover="this.style.backgroundColor='#f1f1f1';"
+            onmouseout="this.style.backgroundColor='#ffffff';"
+            style="transition: background-color 0.3s ease"
+          >
+            <div class="card-body d-flex align-items-center">
+              <div class="me-3 flex-shrink-0">
+                <img
+                  src="img/wi-fi 1.svg"
+                  alt="wi-fi icon"
+                  width="100"
+                  height="100"
+                />
+              </div>
+              <div>
+                <h5 class="card-title">Smart Cooking Mode</h5>
+                <p class="card-text">
+                  Input ingredients and get personalized recipes.
+                </p>
+                <a href="index.html" class="btn btn-light">Cooking Made Easy</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6">
+          <div
+            class="card h-100 shadow-sm hover-shadow transition"
+            style="cursor: pointer"
+            onmouseover="this.style.backgroundColor='#f1f1f1';"
+            onmouseout="this.style.backgroundColor='#ffffff';"
+            style="transition: background-color 0.3s ease"
+          >
+            <div class="card-body d-flex align-items-center">
+              <div class="me-3 flex-shrink-0">
+                <img
+                  src="img/hot-pot 1.svg"
+                  alt="Hot pot"
+                  width="100"
+                  height="100"
+                />
+              </div>
+              <div>
+                <h5 class="card-title">Interactive Cooking Checklist</h5>
+                <p class="card-text">Stay Organized with step-by-step tasks</p>
+                <a href="#" class="btn btn-light">Grab a Checklist</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br />
+
+      <div class="row">
+        <div class="col-sm-6 mb-3 mb-sm-0">
+          <div
+            class="card h-100 shadow-sm hover-shadow transition"
+            style="cursor: pointer"
+            onmouseover="this.style.backgroundColor='#f1f1f1';"
+            onmouseout="this.style.backgroundColor='#ffffff';"
+            style="transition: background-color 0.3s ease"
+          >
+            <div class="card-body d-flex align-items-center">
+              <div class="me-3 flex-shrink-0">
+                <img
+                  src="img/Layer_1.svg"
+                  alt="Task icon"
+                  width="100"
+                  height="100"
+                />
+              </div>
+              <div>
+                <h5 class="card-title">My Task Plan</h5>
+                <p class="card-text">Plan daily tasks in time blocks</p>
+                <a href="index.html" class="btn btn-light"
+                  >Join the Community</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div
+            class="card h-100 shadow-sm hover-shadow transition"
+            style="cursor: pointer"
+            onmouseover="this.style.backgroundColor='#f1f1f1';"
+            onmouseout="this.style.backgroundColor='#ffffff';"
+            style="transition: background-color 0.3s ease"
+          >
+            <div class="card-body d-flex align-items-center">
+              <div class="me-3 flex-shrink-0">
+                <img
+                  src="img/synchronous (1) 1.svg"
+                  alt="Time sync icon"
+                  width="100"
+                  height="100"
+                />
+              </div>
+              <div>
+                <h5 class="card-title">Time Sync & Smart Planner</h5>
+                <p class="card-text">
+                  Schedule and support better time management
+                </p>
+                <a href="#" class="btn btn-light"
+                  >Get time sync with google calendar</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- How it works -->
+      <h1 class="text-center p-5 fw-bold" id="howitworks">How it works</h1>
+      <div class="text-center mb-5">
+        <button class="btn btn-success btn-lg px-5 py-3">
+          <a href="index.html" class="text-white text-decoration-none"
+            >View all recipes</a
+          >
+        </button>
+      </div>
+
+      <div class="row">
+        <!-- Card 1 -->
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img src="img/jollof rice.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Nigerian Jollof Rice</h5>
+              <p class="card-text">A spicy, tasty rice dish</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img src="img/salad.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Healthy Salad Bowl</h5>
+              <p class="card-text">Fresh and Nutritious</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img src="img/Vegetable.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Healthy Vegetable Soup</h5>
+              <p class="card-text">Perfect for a light meal</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonials  -->
+      <div class="row mt-5">
+        <!-- Column 1: Section Title -->
+        <div class="col-md-4 d-flex flex-column justify-content-center">
+          <h3 class="fw-bold">What Our Users Say</h3>
+          <br />
+          <p class="text muted">Real feedback from real users.</p>
+        </div>
+
+        <!-- Column 2: Testimonial 1 -->
+        <div class="col-md-4">
+          <div class="border rounded p-3 mb-4">
+            <div class="d-flex align-items-center">
+              <img
+                src="img/avatar.png"
+                alt="User"
+                class="rounded-circle me-3"
+                width="50"
+                height="50"
+              />
+              <div>
+                <strong>Temmy O</strong><br />
+                <span class="text-warning"> ★★★★★ </span>
+              </div>
+            </div>
+            <p class="mb-3">
+              “This app has transformed how I plan meals. It's easy to use and
+              super helpful!”
+            </p>
+          </div>
+        </div>
+
+        <!-- Column 3: Testimonial 2 -->
+        <div class="col-md-4">
+          <div class="border rounded p-3 mb-4">
+            <div class="d-flex align-items-center">
+              <img
+                src="img/avatar 1.png"
+                alt="Image 1"
+                class="rounded-circle me-3"
+                width="50"
+                height="50"
+              />
+              <div>
+                <strong>Kolade O.</strong><br />
+                <span class="text-warning"> ★★★★★ </span>
+              </div>
+            </div>
+            <p class="mb-3">
+              “I love the personalized recipes and how I can manage my wellness
+              goals easily.”
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Community -->
+      <h1 class="text-center p-5 fw-bold" id="community">
+        Join hundreds of smart cooks already planning meals the easy way.
+      </h1>
+      <div class="text-center mb-5">
+        <button class="btn btn-success btn-lg px-5 py-3">
+          <a href="index.html" class="text-white text-decoration-none"
+            >Create a Free Account</a
+          >
+        </button>
+      </div>
+    </div>
     <!-- footer -->
-    <footer class="bg-light pt-4 pb-3 p-5">
+    <footer class="bg-light pt-4 pb-3 p-5" id="contact">
       <div class="row text-center py-2">
         <!-- Column 1: Brand/About -->
         <div class="col-md-3 mb-3">
@@ -171,39 +365,11 @@
         <!-- Column 2: Quick Links -->
         <div class="col-md-3 mb-3">
           <h6>Terms of Service</h6>
-          <!-- <ul class="list-unstyled">
-            <li>
-              <a href="#" class="text-dark text-decoration-none">Home</a>
-            </li>
-            <li>
-              <a href="#" class="text-dark text-decoration-none">Features</a>
-            </li>
-            <li>
-              <a href="#" class="text-dark text-decoration-none">About</a>
-            </li>
-            <li>
-              <a href="#" class="text-dark text-decoration-none">Contact</a>
-            </li>
-          </ul> -->
         </div>
 
         <!-- Column 3: Quick Links -->
         <div class="col-md-3 mb-3">
           <h6>Contact Us</h6>
-          <!-- <ul class="list-unstyled">
-            <li>
-              <a href="#" class="text-dark text-decoration-none">Home</a>
-            </li>
-            <li>
-              <a href="#" class="text-dark text-decoration-none">Features</a>
-            </li>
-            <li>
-              <a href="#" class="text-dark text-decoration-none">About</a>
-            </li>
-            <li>
-              <a href="#" class="text-dark text-decoration-none">Contact</a>
-            </li>
-          </ul> -->
         </div>
 
         <!-- Column 4: Contact/Social -->
@@ -235,7 +401,5 @@
         >
       </div>
     </footer>
-
-    <script src="script.js"></script>
   </body>
 </html>
