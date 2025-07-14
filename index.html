@@ -29,7 +29,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="index.html">
           <img
             src="img/logo.svg"
             alt="Logo"
@@ -75,9 +75,10 @@
             </li>
           </ul>
           <form class="d-flex pe-5" role="search">
-            <button class="btn btn-success btn-lg" type="submit">
+            <button class="btn btn-success btn-lg" type="button">
+              <i class="fa-solid fa-magnifying-glass" href="search.html"></i>
               <a href="search.html" class="text-white text-decoration-none"
-                >Search Recipe</a
+                >Search</a
               >
             </button>
           </form>
@@ -118,9 +119,9 @@
         Discover how we can help make cooking easier and healthier.
       </h4>
       <div class="text-center mb-5">
-        <button class="btn btn-success btn-lg px-5 py-3">
-          Explore Features
-        </button>
+        <a href="search.html" class="btn btn-success btn-lg px-5 py-3"
+          >Explore Features
+        </a>
       </div>
 
       <!-- Core Features -->
@@ -246,11 +247,11 @@
       <!-- How it works -->
       <h1 class="text-center p-5 fw-bold" id="howitworks">How it works</h1>
       <div class="text-center mb-5">
-        <button class="btn btn-success btn-lg px-5 py-3">
-          <a href="search.html" class="text-white text-decoration-none"
-            >View all recipes</a
-          >
-        </button>
+        <a
+          href="search.html"
+          class="text-white text-decoration-none btn btn-success btn-lg px-5 py-3"
+          >View all recipes</a
+        >
       </div>
 
       <div class="row">
@@ -403,5 +404,7 @@
         >
       </div>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>

@@ -4,14 +4,14 @@ const mealDetailsContent = document.querySelector('.meal-details-content');
 const recipeCloseBtn = document.getElementById('recipe-close-btn');
 
 // event listener
-searchBtn.addEventListener('click', getMealList);
-mealList.addEventListener('click', getMealRecipe);
-recipeCloseBtn.addEventListener('click', () => {
-    mealDetailsContent.parentElement.classList.remove('showRecipe');
-});
+// searchBtn.addEventListener('click', getMealList);
+// mealList.addEventListener('click', getMealRecipe);
+// recipeCloseBtn.addEventListener('click', () => {
+//     mealDetailsContent.parentElement.classList.remove('showRecipe');
+// });
 
 
-// get meal list that matches with the ingrdients
+// get meal list that matches with the ingredients
 function getMealList(){
     let searchInputTxt = document.getElementById('search-input').value.trim();
     fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?i=${searchInputTxt}`)
@@ -74,3 +74,17 @@ function mealRecipeModal(meal){
     mealDetailsContent.innerHTML = html;
     mealDetailsContent.parentElement.classList.add('showRecipe');
 }
+
+// generate news 
+function getnews(){
+    fetch(`http://newsapi.org/v2/top-headlines?country=us&apikey=f7cea71067bd4177bf32b98081dde11c`)
+    .then(a => a.json())
+    .then(response => {
+        for(var i=0; i<response.articles.length; i++){
+            document.getElementById("output").innerHTML += "<div style='padding-top:20px;'><img style='float:left; width: 150px;' src='"+response.articles[i].urlToImage+"'><h1>"+response.articles[i].title+"</h1>"+response.articles[i].source.name+"<br>"+response.articles[i].description+" <a href='"+response.articles[i].url+"' target='_blank'>"+response.articles[i].url+"</a></div>";
+        } 
+    })
+}
+
+
+// https://cors-anywhere.herokuapp.com/
