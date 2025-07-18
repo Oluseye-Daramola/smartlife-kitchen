@@ -75,16 +75,6 @@ function mealRecipeModal(meal){
     mealDetailsContent.parentElement.classList.add('showRecipe');
 }
 
-// generate news 
-function getnews(){
-    fetch(`http://newsapi.org/v2/top-headlines?country=us&apikey=f7cea71067bd4177bf32b98081dde11c`)
-    .then(a => a.json())
-    .then(response => {
-        for(var i=0; i<response.articles.length; i++){
-            document.getElementById("output").innerHTML += "<div style='padding-top:20px;'><img style='float:left; width: 150px;' src='"+response.articles[i].urlToImage+"'><h1>"+response.articles[i].title+"</h1>"+response.articles[i].source.name+"<br>"+response.articles[i].description+" <a href='"+response.articles[i].url+"' target='_blank'>"+response.articles[i].url+"</a></div>";
-        } 
-    })
-}
 
 
 // https://cors-anywhere.herokuapp.com/
