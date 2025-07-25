@@ -237,24 +237,27 @@
     </footer>
 
     <script>
-      let headersList = {
-        Accept: "*/*",
-        "User-Agent": "Thunder Client (https://www.thunderclient.com)",
-        "x-apikey": "fab66d49aa4ecb91f822cd4e52d3b27e1df7a",
-      };
-      async function getMealList() {
-        let response = await fetch(
-          "https://localrecipes-0ad7.restdb.io/rest/50-nigerian-recipes-for-smartlife-kitchen-assistant-database",
-          {
-            method: "GET",
-            headers: headersList,
-          }
-        );
+      // async function getMealList() {
+      //   let response = await fetch("./data.json");
 
-        let data = await response.text();
-        console.log(data);
-      }
-      getMealList();
+      //   let data = await response;
+      //   console.log(data);
+      // }
+      // getMealList();
+
+      // fetch("./data.json")
+      //   .then((response) => response)
+      //   .then((data) => {
+      //     console.log(data); // do something with the data
+      //   })
+      //   .catch((error) => console.error("Error loading JSON:", error));
+
+      fetch("http://localhost:5500/data.json")
+        .then((response) => response) // 👈 parse the body
+        .then((data) => {
+          console.log(data); // 👈 now you can see and use the actual data
+        })
+        .catch((error) => console.error("Fetch error:", error));
     </script>
   </body>
 </html>
