@@ -65,7 +65,7 @@
               <a class="nav-link" href="index.html">My tasks</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="news.html">News & Notes</a>
+              <a class="nav-link" href="news2.html">News & Notes</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="index.html">Contact</a>
@@ -236,6 +236,25 @@
       </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script>
+      let headersList = {
+        Accept: "*/*",
+        "User-Agent": "Thunder Client (https://www.thunderclient.com)",
+        "x-apikey": "fab66d49aa4ecb91f822cd4e52d3b27e1df7a",
+      };
+      async function getMealList() {
+        let response = await fetch(
+          "https://localrecipes-0ad7.restdb.io/rest/50-nigerian-recipes-for-smartlife-kitchen-assistant-database",
+          {
+            method: "GET",
+            headers: headersList,
+          }
+        );
+
+        let data = await response.text();
+        console.log(data);
+      }
+      getMealList();
+    </script>
   </body>
 </html>
