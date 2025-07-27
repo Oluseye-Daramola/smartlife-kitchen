@@ -59,17 +59,33 @@
             <li class="nav-item">
               <a class="nav-link" href="#features">Features</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="team.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#community">My tasks</a>
+             <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="aboutDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                About
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                <li>
+                  <a class="dropdown-item" href="overview.html"
+                    >Product Overview</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="team.html">Meet Our Team</a>
+                </li>
+              </ul>
             </li>
             <li class="nav-item">
               <a class="nav-link active" href="#howitworks">News & Notes</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
+              <a class="nav-link" href="contact.html">Contact</a>
             </li>
           </ul>
           <form class="d-flex pe-5" role="search">
@@ -87,7 +103,7 @@
     <section
       class="hero-section d-flex align-items-center text-white"
       style="
-        background: url('img/team.png') no-repeat center center;
+        background: url('img/meettheteam.png') no-repeat center center;
         background-size: cover;
         height: 80vh;
       "
@@ -107,24 +123,6 @@
 
     <!-- Main container for Fast Food News -->
     <div class="container" id="features">
-      <h1 class="text-center pb-2 mb-3 fw-bold">Product Overview</h1>
-      <h5 class="text-center mt-2 mb-5">
-        Smart life kitchen assistant is your cooking companion if you need to
-        whip up something real quick and easy! You can turn whatever ingredients
-        you have in your kitchen into enjoyable, personalized recipes, no
-        delays, no guesswork or hard time trying to figure out what to prepare.
-        Just step by step guidance to fix something that fits into your mood and
-        cravings. You can enjoy a sprinkle of food and entertainment news to
-        inspire your culinary adventures. With Smart Life Kitchen Assistant,
-        cooking becomes an effortless and enjoyable experience. Let's have some
-        fun making our favorite meal recipes!
-      </h5>
-      <h5 class="text-center mt-2 mb-5">
-        Smart life kitchen assistant+ team worked diligently on the project,
-        leveraging their diverse skills and expertise to drive progress, through
-        collaborative efforts, we've made significant strides in achieving our
-        objectives.
-      </h5>
       <div class="row mb-5">
         <h1 class="text-center pb-2 mb-3 fw-bold">Meet Our Team</h1>
         <!-- Card 1 -->

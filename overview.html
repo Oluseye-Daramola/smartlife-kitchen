@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Find meal for your Ingredients</title>
+    <title>Homepage</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -26,6 +26,7 @@
     ></script>
   </head>
   <body>
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html">
@@ -56,7 +57,7 @@
               <a class="nav-link" aria-current="page" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="index.html">Features</a>
+              <a class="nav-link" href="#features">Features</a>
             </li>
             <li class="nav-item dropdown">
               <a
@@ -81,7 +82,7 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="news.html">News & Notes</a>
+              <a class="nav-link active" href="#howitworks">News & Notes</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="contact.html">Contact</a>
@@ -89,95 +90,54 @@
           </ul>
           <form class="d-flex pe-5" role="search">
             <button class="btn btn-success btn-lg" type="submit">
-              Get Started
+              <a href="search.html" class="text-white text-decoration-none"
+                >Search Recipe</a
+              >
             </button>
           </form>
         </div>
       </div>
     </nav>
-    <div class="container">
-      <div class="meal-wrapper">
-        <div class="meal-search">
-          <h2 class="title">What would you like to cook today?</h2>
-          <!-- <blockquote>
-            Real food doesn't have ingredients, real food is ingredients. <br />
-            <cite>- Jamie Oliver</cite>
-          </blockquote> -->
-          <div class="meal-search-box">
-            <input
-              type="text"
-              class="search-control"
-              placeholder="Search recipes, cooks, tips..."
-              id="search-input"
-            />
-            <button
-              type="submit"
-              class="search-btn btn btn-success"
-              id="search-btn"
-            >
-              <i class="fas fa-search"></i>
-            </button>
-          </div>
-        </div>
 
-        <div class="meal-result">
-          <h2 class="title"></h2>
-          <div id="meal">
-            <!-- meal item -->
-            <!-- <div class="meal-item">
-              <div class="meal-img">
-                <img src="food.jpg" alt="food" />
-              </div>
-              <div class="meal-name">
-                <h3>Potato Chips</h3>
-                <a href="#" class="recipe-btn">Get Recipe</a>
-              </div>
-            </div> -->
-            <!-- end of meal item  -->
-          </div>
-        </div>
-        <div class="meal-details">
-          <!-- recipe close btn -->
-          <button
-            type="button"
-            class="btn btn-light recipe-close-btn"
-            id="recipe-close-btn"
-          >
-            <i class="fas fa-times"></i>
-          </button>
-          <!-- meal content -->
-          <div class="meal-details-content">
-            <!-- <h2 class="recipe-title">Meals Name Here</h2>
-            <p class="recipe-category">Category Name</p>
-            <div class="recipe-instruct">
-              <h3>Instructions:</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
-                illum ipsam tempora dolorem explicabo. Nobis harum quam, earum,
-                adipisci quia perferendis, aspernatur odio velit doloribus
-                blanditiis amet vitae quos dolore?
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Quibusdam, pariatur dolorem? Quibusdam laboriosam nulla
-                consequatur deleniti repellendus voluptatum aliquid ipsam
-                voluptatem itaque, id provident praesentium nisi rem voluptas
-                laudantium dolorem
-              </p>
-            </div>
-            <div class="recipe-meal-img">
-              <img src="food.jpg" alt="" />
-            </div>
-            <div class="recipe-link">
-              <a href="#" target="_blank">Watch Video</a>
-            </div> -->
+    <!-- Hero Session -->
+    <section
+      class="hero-section d-flex align-items-center text-white"
+      style="
+        background: url('img/product\ overview.png') no-repeat center center;
+        background-size: cover;
+        height: 80vh;
+      "
+    >
+      <div class="container text-center text-md-start">
+        <div class="row">
+          <div class="col-md-12 mt-3">
+            <h1 class="display-2 fw-bold mt-3">Product Overview</h1>
+            <a href="search.html" class="btn btn-success btn-lg mt-3 px-5 py-2"
+              >Get Started</a
+            >
           </div>
         </div>
       </div>
+    </section>
+
+    <!-- Main container for Fast Food News -->
+    <div class="container">
+      <h1 class="text-center pb-2 mb-3 fw-bold">Product Overview</h1>
+      <h5 class="text-center mt-2 lh-lg">
+        Smart life kitchen assistant is your cooking companion if you need to
+        whip up something real quick and easy! You can turn whatever ingredients
+        you have in your kitchen into enjoyable, personalized recipes, no
+        delays, no guesswork or hard time trying to figure out what to prepare.
+        Just step by step guidance to fix something that fits into your mood and
+        cravings. You can enjoy a sprinkle of food and entertainment news to
+        inspire your culinary adventures. With Smart Life Kitchen Assistant,
+        cooking becomes an effortless and enjoyable experience. Let's have some
+        fun making our favorite meal recipes!
+      </h5>
     </div>
 
     <!-- footer -->
-    <footer class="bg-light pt-4 pb-3 p-5">
+    <footer class="bg-light pt-4 pb-3 p-5" id="contact">
       <div class="row text-center py-2">
         <!-- Column 1: Brand/About -->
         <div class="col-md-3 mb-3">
@@ -187,39 +147,11 @@
         <!-- Column 2: Quick Links -->
         <div class="col-md-3 mb-3">
           <h6>Terms of Service</h6>
-          <!-- <ul class="list-unstyled">
-            <li>
-              <a href="#" class="text-dark text-decoration-none">Home</a>
-            </li>
-            <li>
-              <a href="#" class="text-dark text-decoration-none">Features</a>
-            </li>
-            <li>
-              <a href="#" class="text-dark text-decoration-none">About</a>
-            </li>
-            <li>
-              <a href="#" class="text-dark text-decoration-none">Contact</a>
-            </li>
-          </ul> -->
         </div>
 
         <!-- Column 3: Quick Links -->
         <div class="col-md-3 mb-3">
           <h6>Contact Us</h6>
-          <!-- <ul class="list-unstyled">
-            <li>
-              <a href="#" class="text-dark text-decoration-none">Home</a>
-            </li>
-            <li>
-              <a href="#" class="text-dark text-decoration-none">Features</a>
-            </li>
-            <li>
-              <a href="#" class="text-dark text-decoration-none">About</a>
-            </li>
-            <li>
-              <a href="#" class="text-dark text-decoration-none">Contact</a>
-            </li>
-          </ul> -->
         </div>
 
         <!-- Column 4: Contact/Social -->
@@ -253,5 +185,7 @@
     </footer>
 
     <script src="script.js"></script>
+
+    <script></script>
   </body>
 </html>
