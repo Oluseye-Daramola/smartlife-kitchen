@@ -131,7 +131,7 @@ font-size: 1rem;
 }
 
 /* meal details */
-.meal-details{
+/* .meal-details{
     position: fixed;
     top: 50%;
     left: 50%;
@@ -144,7 +144,49 @@ font-size: 1rem;
     overflow-y: scroll;
     display: none;
     padding: 2rem 0;
+} */
+
+.meal-details {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  background: var(--tenne-tawny);
+  border-radius: 1rem;
+  width: 90%;
+  max-width: 800px; /* keep it readable on larger screens */
+  height: 90%;
+  max-height: 90vh; /* don’t exceed viewport height */
+  overflow-y: auto; /* scroll inside only */
+  display: none;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+  line-height: 1.6; /* ✅ space between lines for readability */
+  word-break: break-word; /* ✅ break long words/URLs */
+  overflow-wrap: break-word; /* ✅ ensure wrapping */
 }
+
+/* Ensure images don’t overflow */
+.meal-details img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* 📱 Mobile optimization */
+@media (max-width: 576px) {
+  .meal-details {
+    width: 100%;          /* full width on small screens */
+    height: 100%;         /* full height like a fullscreen modal */
+    border-radius: 0;     /* remove radius for fullscreen look */
+    padding: 1rem;        /* smaller padding */
+    font-size: 0.95rem;   /* slightly smaller text */
+    line-height: 1.7;     /* better spacing */
+  }
+}
+
+
 
 /* .meal-details:: ::-webkit-scrollbar{
     width: 10px;
@@ -159,7 +201,7 @@ font-size: 1rem;
     display: block;
 }
 
-.meal-details-content {
+/* .meal-details-content {
   margin: 2rem auto;
   padding: 1rem;
   font-size: 1.1rem;
@@ -168,16 +210,44 @@ font-size: 1rem;
   width: 100%;
   box-sizing: border-box;
   overflow-wrap: break-word;
-}
+} */
 
 /* Mobile-specific optimization */
-@media (max-width: 576px) {
+/* @media (max-width: 576px) {
   .meal-details-content {
     font-size: 1rem;
     padding: 1.2rem;
     margin: 1rem;
   }
+} */
+
+
+.meal-details-content {
+  margin: 1rem auto;
+  padding: 1rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  /* width: 100%; */
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow-wrap: break-word; /* breaks long words */
+  word-wrap: break-word;
+  word-break: break-word;
+  line-height: 2.0;
 }
+
+/* Mobile optimization */
+@media (max-width: 576px) {
+  .meal-details-content {
+    font-size: 0.95rem;   /* slightly smaller text */
+    padding: 0.8rem;      /* reduce padding */
+    margin: 0.5rem;       /* reduce margin */
+    max-width: 100%;
+    line-height: 1.7;     /* more space between lines */
+  }
+}
+
+
 
 
 .meal-details-content p:not(.recipe-category){
@@ -277,9 +347,7 @@ margin: 1.4rem 0;
     margin: 0;
 }
 
-.meal-details{
-    width: 700px; 
-}
+
 @media screen and (min-width: 992px) {
     #meal{
         grid-template-columns: repeat(3, 1fr);
